@@ -130,6 +130,8 @@ figcaption{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);padd
 .video-frame{position:relative;aspect-ratio:16/9;background:var(--sheet);border:1px solid var(--line)}
 .video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .video p{margin:8px 0 0;color:var(--muted)}
+.video-fig{display:flex;flex-direction:column}
+.video-fig video{width:100%;flex:1;min-height:0;object-fit:cover;display:block;background:#000}
 /* compact cards for in-progress and data work */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--sheet);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:10px}
@@ -336,21 +338,16 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
         <div><span>Mechanisms</span><b>Slider crank, 2 scotch yokes, cam, belt, chain, bevel gears</b></div>
         <div><span>Dates</span><b>Spring 2026</b></div>
         <div><span>Envelope</span><b>18 × 18 × 8 in</b></div>
-        <div><span>Team</span><b>Group project</b></div>
+        <div><span>Team</span><b>4 people</b></div>
         <div class="full last"><span>Fabrication</span><b>Manual mill (Delrin), lathe, plasma cut and bent sheet metal, laser cutting, 3D printing</b></div>
       </div>
     </div>
     <div class="gallery g-hero">
-      <figure class="free"><button type="button" data-full="img/origins-hero.jpg"><img src="img/origins-hero.jpg" alt="Finished kinetic sculpture with a carved tree, ring light, cutout walking figure, laser-cut building and moss"></button><figcaption>Final sculpture</figcaption></figure>
+      <figure class="video-fig"><video src="img/origins-run.mp4" poster="img/origins-run-poster.jpg" autoplay muted loop playsinline controls aria-label="Origins kinetic sculpture running at the final showcase: the figure walks, the building rises, and the flowers spin"></video><figcaption>Running at the final showcase</figcaption></figure>
       <div class="stack">
         <figure class="fit"><button type="button" data-full="img/origins-cad.jpg"><img src="img/origins-cad.jpg" alt="CAD assembly showing the mechanisms inside the box under the scene"></button><figcaption>Full CAD assembly</figcaption></figure>
-        <figure><button type="button" data-full="img/origins-walker.jpg"><img src="img/origins-walker.jpg" alt="Close-up of the walking figure driven by scotch yokes"></button><figcaption>Walking figure on two scotch yokes</figcaption></figure>
+        <figure><button type="button" data-full="img/origins-mech.jpg"><img src="img/origins-mech.jpg" alt="Inside the box: milled Delrin parts and shafts"></button><figcaption>Milled Delrin and bearings to cut friction</figcaption></figure>
       </div>
-    </div>
-    <div class="gallery g-3">
-      <figure><button type="button" data-full="img/origins-mech.jpg"><img src="img/origins-mech.jpg" alt="Inside the box: milled Delrin parts and shafts"></button><figcaption>Milled Delrin and bearings to cut friction</figcaption></figure>
-      <figure><button type="button" data-full="img/origins-flowers.jpg"><img src="img/origins-flowers.jpg" alt="Spray-painted sheet metal flowers on the moss"></button><figcaption>Belt-driven sheet metal flowers</figcaption></figure>
-      <figure><button type="button" data-full="img/origins-tree.jpg"><img src="img/origins-tree.jpg" alt="Hand-carved and painted wooden tree"></button><figcaption>Hand-carved tree</figcaption></figure>
     </div>
     <div class="body">
       <div><h3>Build</h3><p>Four core mechanisms run off a single chain drive: a slider crank for the vines, two scotch yokes for the walking man, a cam for the building, and a belt drive with 1:1 bevel gears to spin the flowers. The build used 3 milled Delrin parts, 1 turned part and 9 plasma-cut parts bent on sheet metal tools.</p></div>
