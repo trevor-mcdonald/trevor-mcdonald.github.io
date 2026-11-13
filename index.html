@@ -126,6 +126,10 @@ figcaption{font-family:var(--font-mono);font-size:11.5px;color:var(--muted);padd
 .steps p{margin:0;font-size:14.5px}
 .callout{border-left:3px solid var(--accent);background:var(--accent-soft);padding:14px 18px;margin:24px 0 0;font-size:16px}
 
+.video{margin-bottom:24px}
+.video-frame{position:relative;aspect-ratio:16/9;background:var(--sheet);border:1px solid var(--line)}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video p{margin:8px 0 0;color:var(--muted)}
 /* compact cards for in-progress and data work */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .card{background:var(--sheet);border:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:10px}
@@ -191,7 +195,6 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
     <dl class="facts">
       <div><dt>Studying</dt><dd>B.S. Engineering Design, Olin College, May 2029</dd></div>
       <div><dt>Focus</dt><dd>Assistive technology, mechanisms, robotics</dd></div>
-      <div><dt>Looking for</dt><dd>Summer 2027 internship in product design or robotics</dd></div>
       <div><dt>Contact</dt><dd><a href="mailto:tmcdonald@olin.edu">tmcdonald@olin.edu</a></dd></div>
     </dl>
   </section>
@@ -203,19 +206,17 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
       <li><a href="#braille"><span class="no">01</span><span class="nm">Braille Learning Device</span><span class="tg">Assistive tech · co-design · CAD</span></a></li>
       <li><a href="#cure"><span class="no">02</span><span class="nm">Resin Cure Sensor</span><span class="tg">Sensing · PCB · hackathon</span></a></li>
       <li><a href="#origins"><span class="no">03</span><span class="nm">Origins Kinetic Sculpture</span><span class="tg">Mechanisms · machining</span></a></li>
-      <li><a href="#ship"><span class="no">04</span><span class="nm">Sinking Ship</span><span class="tg">Mechanisms · machining</span></a></li>
-      <li><a href="#robotics"><span class="no">05</span><span class="nm">Computational Robotics</span><span class="tg">ROS 2 · vision · localization</span></a></li>
-      <li><a href="#progress"><span class="no">06</span><span class="nm">Wall-Climbing Thrust Robot</span><span class="tg">In progress</span></a></li>
-      <li><a href="#datafest"><span class="no">07</span><span class="nm">Rural vs. Urban Diabetes Care</span><span class="tg">Data · award</span></a></li>
-      <li><a href="#studies"><span class="no">08</span><span class="nm">Mechanism and Joinery Studies</span><span class="tg">Gears · cams · joints</span></a></li>
+      <li><a href="#robotics"><span class="no">04</span><span class="nm">Computational Robotics</span><span class="tg">ROS 2 · vision · localization</span></a></li>
+      <li><a href="#datafest"><span class="no">05</span><span class="nm">Rural vs. Urban Diabetes Care</span><span class="tg">Data · award</span></a></li>
+      <li><a href="#studies"><span class="no">06</span><span class="nm">Mechanism and Joinery Studies</span><span class="tg">Gears · cams · joints</span></a></li>
     </ol>
     <div class="group-label">Earlier work · high school</div>
     <ol>
-      <li><a href="#remember"><span class="no">09</span><span class="nm">Remember When</span><span class="tg">Empathetic design</span></a></li>
-      <li><a href="#jacket"><span class="no">10</span><span class="nm">Circulatory Jacket</span><span class="tg">Health wearable</span></a></li>
-      <li><a href="#contraptions"><span class="no">11</span><span class="nm">CAD Contraptions</span><span class="tg">Physical interfaces</span></a></li>
-      <li><a href="#cruiser"><span class="no">12</span><span class="nm">Code Cruiser</span><span class="tg">Educational toy</span></a></li>
-      <li><a href="#kroka"><span class="no">13</span><span class="nm">Kroka Expeditions</span><span class="tg">Client work</span></a></li>
+      <li><a href="#remember"><span class="no">07</span><span class="nm">Remember When</span><span class="tg">Empathetic design</span></a></li>
+      <li><a href="#jacket"><span class="no">08</span><span class="nm">Circulatory Jacket</span><span class="tg">Health wearable</span></a></li>
+      <li><a href="#contraptions"><span class="no">09</span><span class="nm">CAD Contraptions</span><span class="tg">Physical interfaces</span></a></li>
+      <li><a href="#cruiser"><span class="no">10</span><span class="nm">Code Cruiser</span><span class="tg">Educational toy</span></a></li>
+      <li><a href="#kroka"><span class="no">11</span><span class="nm">Kroka Expeditions</span><span class="tg">Client work</span></a></li>
     </ol>
   </nav>
 
@@ -358,41 +359,11 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
     </div>
   </article>
 
-  <!-- 04 SHIP -->
-  <article class="project" id="ship">
-    <div class="project-head">
-      <div>
-        <div class="kicker">04 · Mechanical Prototyping</div>
-        <h2>Sinking Ship</h2>
-        <p class="sum">A mechanical re-enactment of the sinking of the RMS Lusitania: a U-boat fires a torpedo that strikes the ship.</p>
-      </div>
-      <div class="tb">
-        <div><span>Mechanisms</span><b>3 belts, 2:1 gearbox, scotch yoke, DC motor</b></div>
-        <div><span>Dates</span><b>Spring 2026</b></div>
-        <div><span>Team</span><b>Group project</b></div>
-        <div><span>Learned</span><b>Onshape variables, manual mill, lathe</b></div>
-        <div class="full last"><span>Fabrication</span><b>Laser cutter, manual mill, metal lathe, ShopBot CNC, 3D printing</b></div>
-      </div>
-    </div>
-    <div class="gallery g-hero">
-      <figure class="free"><button type="button" data-full="img/ship-hero.jpg"><img src="img/ship-hero.jpg" alt="Finished box with an etched acrylic water surface and the ship above it"></button><figcaption>Final build with CNC-cut acrylic waves</figcaption></figure>
-      <div class="stack">
-        <figure class="fit"><button type="button" data-full="img/ship-cad.jpg"><img src="img/ship-cad.jpg" alt="CAD of the gearbox, belts and speaker horn"></button><figcaption>Full CAD assembly</figcaption></figure>
-        <figure><button type="button" data-full="img/ship-belt.jpg"><img src="img/ship-belt.jpg" alt="DC motor coupled to a belt drive"></button><figcaption>Motor and belt drive</figcaption></figure>
-      </div>
-    </div>
-    <div class="body">
-      <div><h3>Tensioning</h3><p>Belt tension wasn't solved in CAD. We re-cut and re-printed several parts and rebuilt the tensioning system for one belt entirely before it ran reliably.</p></div>
-      <div><h3>Designing for the mill</h3><p>The scotch yoke was meant to be our milled part, but the first design couldn't be machined. We redesigned it for the mill and moved a few other parts to the laser cutter to simplify fabrication.</p></div>
-      <div><h3>Result</h3><p>Every mechanism works. Their timing doesn't line up well enough to sell the moment of impact. Syncing the motions is the next fix.</p></div>
-    </div>
-  </article>
-
   <!-- 05 ROBOTICS -->
   <article class="project" id="robotics">
     <div class="project-head">
       <div>
-        <div class="kicker">05 · Computational Robotics</div>
+        <div class="kicker">04 · Computational Robotics</div>
         <h2>Computational Robotics</h2>
         <p class="sum">Three ROS 2 projects on a Neato robot vacuum fitted with a Raspberry Pi: a robot that obeys hand signals, a particle filter, and a wall follower.</p>
       </div>
@@ -403,6 +374,10 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
         <div><span>Teams</span><b>Pairs and a trio</b></div>
         <div class="full last"><span>Code</span><b><a href="https://github.com/trevor-mcdonald/neato_dog">neato_dog</a> · <a href="https://github.com/trevor-mcdonald/robot_localization">robot_localization</a> · <a href="https://github.com/trevor-mcdonald/sid-trevor-fsm-p1">sid-trevor-fsm-p1</a></b></div>
       </div>
+    </div>
+    <div class="video">
+      <div class="video-frame"><iframe src="https://drive.google.com/file/d/1MKL_bKD-_mTbzabMfqgFPULfruPKo5GX/preview" title="Neato D.A.W.G. demo video" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe></div>
+      <p class="mono">Demo: the Neato responds to hand gestures. <a href="https://drive.google.com/file/d/1MKL_bKD-_mTbzabMfqgFPULfruPKo5GX/view">Open the video in Google Drive</a> if it doesn't play here.</p>
     </div>
     <div class="gallery g-2">
       <figure class="fit"><button type="button" data-full="img/dawg-fsm.png"><img src="img/dawg-fsm.png" alt="State machine diagram: idle state connected to Sit, Spin and Fetch, with transitions labeled open hand, zero and peace sign"></button><figcaption>Neato D.A.W.G. state machine: gestures switch behaviors</figcaption></figure>
@@ -415,31 +390,11 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
     </div>
   </article>
 
-  <!-- 06 IN PROGRESS -->
-  <article class="project" id="progress">
-    <div class="project-head">
-      <div>
-        <div class="kicker">06 · Course project · Fall 2026</div>
-        <h2>Wall-Climbing Thrust Robot <span class="status">In progress</span></h2>
-        <p class="sum">A robot that uses propeller thrust both to stick to a wall and to drive across it.</p>
-      </div>
-      <div class="tb">
-        <div><span>Dates</span><b>Fall 2026 – present</b></div>
-        <div><span>Thrust target</span><b>1.8 kg per propeller</b></div>
-        <div class="full last"><span>Tools</span><b>Onshape, 3D printing, hand calculations</b></div>
-      </div>
-    </div>
-    <div class="body two">
-      <div><h3>Analysis</h3><p>Hand calculations set the minimum thrust for wall adhesion at <b>1.8 kg per propeller</b>.</p></div>
-      <div><h3>Design</h3><p>Designed and prototyped <b>3 chassis iterations</b> and a thrust-vectoring gimbal that points the propellers to both press against the wall and drive across it. Photos and test results will go up as testing finishes.</p></div>
-    </div>
-  </article>
-
   <!-- 07 DATAFEST -->
   <article class="project" id="datafest">
     <div class="project-head">
       <div>
-        <div class="kicker">07 · BOW DataFest 2026</div>
+        <div class="kicker">05 · BOW DataFest 2026</div>
         <h2>Rural vs. Urban Diabetes Care</h2>
         <p class="sum">Does living farther from the hospital mean a longer stay for diabetic patients? We tested it with Kansas hospital records and census data.</p>
       </div>
@@ -467,7 +422,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="studies">
     <div class="project-head">
       <div>
-        <div class="kicker">08 · Solo projects</div>
+        <div class="kicker">06 · Solo projects</div>
         <h2>Mechanism and Joinery Studies</h2>
         <p class="sum">Two solo builds under tight material limits: one for gear and cam motion, one for joints and fasteners.</p>
       </div>
@@ -497,7 +452,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="remember">
     <div class="project-head">
       <div>
-        <div class="kicker">09 · Empathetic design</div>
+        <div class="kicker">07 · Empathetic design</div>
         <h2>Remember When</h2>
         <p class="sum">A backlit photo carousel for my grandfather, built from family memories as he began losing his ability to read.</p>
       </div>
@@ -522,7 +477,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="jacket">
     <div class="project-head">
       <div>
-        <div class="kicker">10 · Health wearable</div>
+        <div class="kicker">08 · Health wearable</div>
         <h2>Circulatory Jacket</h2>
         <p class="sum">An interactive jacket that turns the wearer's heart rate and stress into flowing light.</p>
       </div>
@@ -547,7 +502,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="contraptions">
     <div class="project-head">
       <div>
-        <div class="kicker">11 · Physical interfaces</div>
+        <div class="kicker">09 · Physical interfaces</div>
         <h2>CAD Contraptions</h2>
         <p class="sum">Physical widgets that each control one parameter of a 3D teapot model, to make learning CAD less intimidating.</p>
       </div>
@@ -568,7 +523,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="cruiser">
     <div class="project-head">
       <div>
-        <div class="kicker">12 · Educational toy</div>
+        <div class="kicker">10 · Educational toy</div>
         <h2>Code Cruiser</h2>
         <p class="sum">A screens-off toy that teaches young kids coding logic: they arrange physical pieces and a small robot carries out the program.</p>
       </div>
@@ -589,7 +544,7 @@ dialog .close{position:fixed;top:14px;right:18px;background:#fff;color:#111;bord
   <article class="project" id="kroka">
     <div class="project-head">
       <div>
-        <div class="kicker">13 · Client work</div>
+        <div class="kicker">11 · Client work</div>
         <h2>Kroka Expeditions</h2>
         <p class="sum">A month-long partnership with a wilderness school in Marlow, New Hampshire, to make daily life easier for its staff.</p>
       </div>
